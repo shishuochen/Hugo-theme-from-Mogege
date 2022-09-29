@@ -1,0 +1,24 @@
+<div class="intro">
+    {{ with .Site.Params.avatar}}
+    {{ $avatar := .}}
+    <div class="avatar">
+        <a href="/posts/"> <img src="{{ (printf "%s" $avatar)}}"> </a>
+		<br></br>
+    <h2 class="description">
+      <div id="text">
+</div>
+
+</body>
+
+<div class="description center-align">
+
+<span id="subtitle">
+</span>
+<span class="typed-cursor">|</span>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed=new Typed("#subtitle",{strings:["宁静致远","Innovation points out paths that are possible; replication points out paths that are likely; progress relies on both."],startDelay:2,typeSpeed:20,loop:!0,backSpeed:20,showCursor:!1})</script>
+</div>
+</h2>
+{{ end }}
+</div>

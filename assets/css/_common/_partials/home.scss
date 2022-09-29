@@ -1,0 +1,116 @@
+  
+  /** Home **/
+  
+  .intro {
+    transform: translateY(25vh);
+    text-align: center;
+    .avatar {
+      padding: 10px;
+      img {
+        width: 128px;
+        height: auto;
+        display: inline-block;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 0 0 0.3618em rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 0 0.3618em rgba(0, 0, 0, 0.05);
+        margin: 0 auto;
+        -webkit-transition: all ease 0.4s;
+        -moz-transition: all ease 0.4s;
+        -o-transition: all ease 0.4s;
+        transition: all ease 0.4s;
+        cursor: pointer;
+        &:hover {
+          position: relative;
+          -webkit-transform: translateY(-0.75em);
+          -moz-transform: translateY(-0.75em);
+          -ms-transform: translateY(-0.75em);
+          -o-transform: translateY(-0.75em);
+          transform:translateY(-0.75em) rotate(360deg);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  h2.description {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 5px;
+  }
+  
+  .social-links {
+    a {
+    
+      padding: 0 5px;
+      &:hover {
+       
+        background-color: transparent;
+      }
+    }
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  }
+  .post-toc {
+    position: absolute;
+    width: 250px;
+    margin-left: 780px;
+    padding: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    .post-toc-title {
+        margin: 0;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .post-toc-content {
+        &.always-active ul {
+            display: block;
+        }
+        >nav>ul {
+            margin: 10px 0;
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+            ul {
+            padding-left: 15px;
+            display: none;
+            }
+            .has-active > ul {
+                display: block;
+            }
+        }
+    }
+    a:hover {
+        color: #c05b4d;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    a {
+        display: block;
+        line-height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -webkit-transition-duration: .2s;
+        transition-duration: .2s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform,-webkit-transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+}
+@media only screen and (max-width: 1224px) {
+    .post-toc {
+        display: none;
+    }
+} 
